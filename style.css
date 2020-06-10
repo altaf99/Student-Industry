@@ -34,7 +34,7 @@ html {
 	padding: 20px 15px !important;
 }
 
-.container{
+.mycontainer{
 	margin-right: 100px;
 	margin-left: 100px;
 }
@@ -506,7 +506,7 @@ hr{
 		background-image: none;
 	}
 
-	.container{
+	.mycontainer{
 	margin-right: 50px;
 	margin-left: 50px;
 	}
