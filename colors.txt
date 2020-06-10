@@ -1,0 +1,5 @@
+nav => #8c6bc1
+
+tutorial nav => e89393,#9cf7f3
+
+pink => #f67c92
