@@ -665,8 +665,32 @@ hr{
 }
 
 
-@media only screen and  (min-width: 520px){
+/*@media only screen and  (min-width: 520px){
 
+	#courses{
+	height: 60vh;
+	width: 100vw;
+	}
 
+	#courses h1{
+	margin-right: 25%;
+	margin-left: 25%;
+	}
 
-}
+	.courses-text button{
+			margin: 20px 0;
+			border: 2px dashed #fff;
+	}
+
+	#courses #course_p{
+	color: #00dee8;
+	font-family: sans-serif;
+	line-height: 18px;
+	max-width: 550px;
+	position: relative;
+	margin-top: 50px;
+	font-size: 18px;
+	overflow: hidden;
+	}
+
+}*/
