@@ -4,8 +4,14 @@
 	font-family: sans-serif;
 }
 
+/**{
+    
+ outline: 1px solid red !important; 
+ margin-right: 0;
+} */
+
 body{
-	overflow-x: hidden;
+	overflow-x: hidden !important;
 }
 html {
   scroll-behavior: smooth;
@@ -504,6 +510,7 @@ hr{
 @media only screen and  (max-width: 770px){
 	#header{
 		background-image: none;
+		height: 75vh;
 	}
 
 	.mycontainer{
@@ -514,28 +521,77 @@ hr{
 	.slogun{
 		margin-top: 20px;
 		width:200px;
+		height: 80px;
 	}
 
 	.slogun2{
 		margin-top: 3px;
 		width:250px;
+		height: 80px;
 	}
 
-
-
 	.header-text{
-		margin-top: 35px;
+		margin-top: 5px;
+	}
+
+	.header-text button{
+		padding: 15px 10px !important;
 	}
 
 	h1{
-		font-size: 25px;
+		font-size: 22px;
 	}
+
+	#header .play-btn{
+		width: 25px;
+
+	}
+
+	.square{
+	height: 15px;
+	width: 15px;
+	margin: 5px 0;
+	}
+
+	p{
+		font-size: 12px;
+		line-height: 14px;
+	}
+
+
 
 	#menuBtn{
 	width: 40px;
 	right: 50px;
 	
 	}
+	#about{
+		padding: 8px 0;
+	}
+
+	#services {
+     padding: 8px 0; 
+	}
+
+	#offer{
+		padding: 16px 0; 
+	}
+
+	.feature-btn {
+	    margin: 0px; 
+	    display: flex;
+	    align-items: flex-end;
+	    justify-content: center;
+	}
+	.feature-btn .common-btn{
+		
+		padding: 5px 8px;
+	}
+
+	.feature-btn .line{
+		display: none;
+	}
+
 	#courses{
 	height: 60vh;
 	width: 100vw;
@@ -544,6 +600,11 @@ hr{
 	#courses h1{
 	margin-right: 25%;
 	margin-left: 25%;
+	}
+
+	.title::before {
+	  
+	    transform: translateY(42px);
 	}
 
 	.courses-text button{
@@ -555,6 +616,17 @@ hr{
 	.common-btn{
 		padding: 10px 16px;
 	}
+
+	#story h1 {
+   	margin-right: 20%;
+    margin-left: 0%;
+    padding: 10px 20px !important;
+    border-left: 5px solid #fff;
+
+	}
+
+
+
 
 	#story{
 	height: 60vh;
@@ -654,12 +726,16 @@ hr{
 	}
 
 	#story button{
-		margin-bottom: : 20px;
+		margin-top: 12px;
 		border-color: #ffb8b4 !important;
 		color: #fff !important;
 		padding: 15px 25px !important; 
 		margin-bottom: 10px !important;
 		align-content: center;
+	}
+
+	#story .line{
+		margin-top: 8px;
 	}
 
 }
