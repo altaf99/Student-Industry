@@ -448,9 +448,9 @@ hr{
 #story h1{
 	background: rgb(255,174,0);
 	background: linear-gradient(90deg, rgba(255,174,0,1) 0%, rgba(85,236,231,1) 51%, rgba(217,0,170,1) 100%);
-	margin-right: 30%;
+	margin-right: 40%;
 	margin-left: 0%;
-	padding: 15px 25px !important; 
+	padding: 10px 20px !important; 
 	
 
 	border-left: 10px solid #fff;
@@ -638,9 +638,9 @@ hr{
 	}
 
 	#story h1{
-	margin-right: 0%;
+	margin-right: 35%;
 	margin-left: 0%;
-	height: 140px;
+
 	font-size: 32px;
 
 	}
