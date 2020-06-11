@@ -1,335 +1,267 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-	
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: sans-serif;
+  transition: background-color .5s;
+}
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0px;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  background: #f67c92;
+}
 
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  margin: 20px 20px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+.sidenav a:hover {
+  color: #f1f1f1;
+}
 
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#menuBtn{
+  width: 50px;
+  position: fixed;
+  right: 20px;
+  top: 70px;
+  z-index: 2;
+  transition: margin-right .5s;
+  cursor: pointer;
+}
+
+.header-image {
+  background-image: url("images/background.png");
+  height: 92vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.header-text  p{
+
+  font-size: 15px;
+  line-height: 18px;
+  color: #777;
+  max-width: 350px;
+}
+
+.header-btn{
+  padding: 18px 40px;
+  background: transparent;
+  outline: none;
+  border: 2px solid #8c6bc1;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.square{
+  height: 14px;
+  width: 14px;
+  display: inline-block;
+  background: #8c6bc1;
+  margin: 10px 0;
+}
+
+.line-1{
+  width:15px;
+  height: 15px;
+  background: #8c6bc1;
+  display: inline-block;
+}
+.line-2{
+  width:80px;
+  height: 1px;
+  background: #8c6bc1;
+  display: inline-block;
+}
+.line-3{
+  width:60px;
+  height: 1px;
+  background: #8c6bc1;
+  display: inline-block;
+}
+
+.line{
+  line-height: 8px;
+}
+
+.social-icons{
+  width: 50px;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.social-icons img{
+  display: block;
+  width: 20px;
+  margin: 0 auto 20px;
+  cursor: pointer;
+}
+
+/*.social-icons img{
+  width: 14px;
+  margin: 15px auto;
+  
+}*/
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+@media only screen and  (max-width: 770px){
+  .header-image{
+    background-image: none;
+    /*height: 75vh;*/
+  }
+}
+
+@media only screen and  (max-width: 650px){
+  .header-text{
+    margin-left: 18px;
+  }
+  .social-icons {
+    width: 28px;
+  }
+}
+</style>
 </head>
 <body>
 
-	<section id="header">
-		<div class="container">
-			<div class="row header-img">
-				<img src="images/student.png"  class="img-fluid" id="student"><br>
-			</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-			<div class="row header-img">
-				<img src="images/industry.png" class="img-fluid" id="student2">
-			</div>
-			
-			
-			<div class="row">
-				<div class="header-text">
-				<h1>The Purpose Is To<br> Bring Learning To Students</h1>
-				<span class="square"></span>
-				<p>To Build A Community Where Students Can Explore Their Passion, Learn Latest Technologies, Work On Real World Problems,
-				and Help Each Other To Learn More. Do More.</p>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
 
-				<a href="#"><button class="common-btn"><img src="images/play_btn.png" class="play-btn"> Watch Tutorials</button></a>	
-				<div class="line">
-					<span class="line-1"></span><br>
-					<span class="line-2"></span><br>
-					<span class="line-3"></span>
-				</div>	
-			</div>
-			</div>
-			
-		</div>
-	</section>
-
-
-	<nav id="sideNav">
-		<ul>
-			<li><a href="#header">HOME</a></li>
-			<li><a href="#about">About US</a></li>
-			<li><a href="#features">Feature</a></li>
-			<li><a href="#courses">Courses</a></li>
-			<li><a href="#offer">OFFER</a></li>
-			<li><a href="#contact">CONTACT</a></li>
-		</ul>
-	</nav>
-
-	<img src="images/menu.png" id="menuBtn" class="img-fluid">
-
-	<!-- about -->
-	<section id="about">
-		<div class="about-left-col">
-			<img src="images/about.png">
-		</div>
-		<div class="about-right-col">
-			<div class="about-text">
-				<h1>About</h1>
-				<span class="square"></span>
-				<p>We Are Non-Profit Organization and Our AIM Is To Bring Disruption In Technical Education And To Make Student Skilled, To Bridge The Skill GAP Between Industries and Students</p><br><br>
-				<div class="line">
-					<span class="line-1"></span><br>
-					<span class="line-2"></span><br>
-					<span class="line-3"></span>
-				</div>	
-				<h2>"Learning is not attained by chance, it must be sought for with ardor and attended to width diligence"</h2>
-				<h3>----Abigail Adams</h3>
-			</div>
-		</div>
-	</section>
-
-	<!-- banner -->
-
-<!-- <section id="banner">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<p class="promo-title">Best Learning Platform</p>
-				<p>Contrary to popular belief, This is dumy test u acan ut whatever you want to out here. and it wll work fijne fot you</p>	
-				
-			</div>
-			<div class="col-md-6 text-center">
-				<img src="" class="img-fluid">
-			</div>
-		</div>
-	</div> -->
-	<!-- wave img -->
-<!-- 	<img src="" class="bottom-img">
-</section> -->
-
-	<!-- features -->
-	<section id="features">
-		<div class="feature-row">
-			<div class="feature-col">
-				<img src="images/pic-1.png">
-				<h4>Learn Anywhere</h4>
-				<p>Switch between your computer, tablet or mobile device</p>
-			</div>
-			<div class="feature-col">
-				<img src="images/pic-2.png">
-				<h4>Expert Teachers</h4>
-				<p>Learn from industry experts and from your peers who are passionate about teaching.</p>
-			</div>
-			<div class="feature-col">
-				<img src="images/pic-3.png">
-				<h4>Unlimited Access</h4>
-				<p>choose what you'd like to learn from our extensive free tutorials and courses.</p>
-			</div>
-		</div>
-		<div class="feature-row">
-			<div class="feature-col">
-				<img src="images/teamwork.jpg">
-				<h4>Peer Learning</h4>
-				<p>Empowering Peer to Peer learning among students.</p>
-			</div>
-			<div class="feature-col">
-				<img src="images/community.jpg">
-				<h4>Community</h4>
-				<p>We have Huge community of Developers, Non-technical and Cyber Security Professionals.</p>
-			</div>
-			<div class="feature-col">
-				<img src="images/industry.jpg">
-				<h4>Student Industry</h4>
-				<p>We have our own IT Infrastructure to let students to build real things.</p>
-			</div>
-		</div>
-
-		<div class="feature-btn">
-				<div class="line">
-					<span class="line-1"></span><br>
-					<span class="line-2"></span><br>
-					<span class="line-3"></span>
-				</div>	
-			<button class="common-btn">Start Learning Now!</button>
-		</div>
-
-	</section>
-
-<!-- services -->
-
-<section id="services">
-	<div class="container text-center">
-		<h1 class="title">WHAT WE DO?</h1>
-		<div class="row text-center">
-			<div class="col-md-4 services">
-				<img src="images/workshop.jpg" class="service-img">
-				<h4>Workshops</h4>
-				<p>We conduct workshops on emerging technologies and provides hands-on experience on what being taught!</p>
-			</div>
-			<div class="col-md-4 services">
-				<img src="images/internship.png" class="service-img2">
-				<h4>Provides Interships</h4>
-				<p>We provides intership opportunities to students.</p>
-			</div>
-			<div class="col-md-4 services">
-				<img src="images/video_tutorial.jpg" class="service-img3">
-				<h4>Video Tutorials</h4>
-				<p>We have Video tutorials so that students can learn on thier own pace and have better understanding on concepts.</p>
-			</div>
-		</div>
-		<div class="row text-center">
-			<div class="col-md-6 services">
-				<img src="images/blog_tutorial.jpg" class="service-img4">
-				<h4>Blog Tutorials</h4>
-				<p>we let students to share what they have learned in the form of Technical Blog.</p>
-			</div>
-			<div class="col-md-6 services">
-				<img src="images/security.jpg" class="service-img">
-				<h4>Cyber Security</h4>
-				<p>With development we also teach students how to write secure code and give them education on Cyber Security and threats.</p>
-			</div>
-		</div>
-	</div>
-</section>
+<img src="images/menu.png" id="menuBtn" class="img-fluid" onclick="openNav()">
 
 
-	<!-- courses -->
+<div class="header-image">
+  <div class="container">
 
-	<section id="courses">	
-		      <div class="card-overlay">
-			      <div class="courses-text text-center">
-			      	<br>
-			      	
-					<h1 class="underline-container">Our Courses <span class="underline"></span></h1>
+    <div class="row">
+        <img src="images/student.png"  class="img-responsive col-sm-4">
+      </div>
 
-					<center><p id="course_p">To Build A Community Where Students Can Explore Their Passion, Learn Latest Technologies, Work On Real World Problems,
-					and Help Each Other To Learn More. Do More.</p></center>
-					
-					<a href="#"><button class="common-btn">Browse Courses</button></a>	
-					
-				</div>
-			</div>
-	</section>
+      <div class="row" style="margin-top: 0">
+        <img src="images/industry.png" class="img-responsive col-sm-4">
+    </div>
 
-	<!-- offer -->
-	<section id="offer">
-		<div class="about-left-col">
-			<img src="images/offer.png">
-		</div>
-		<div class="about-right-col">
-			<div class="about-text">
-				<h1>Limitless Learning, <br>Limitless Possibilities</h1>
-				<span class="square"></span>
-				<p>Browser our free courses, video tutorials, blogs and start shaping your career</p>
-				<button class="common-btn">Start Learning Now!</button>
-				<div class="line">
-					<span class="line-1"></span><br>
-					<span class="line-2"></span><br>
-					<span class="line-3"></span>
-				</div>	
+    <div class="header-text">
+      <h1 class="text-left .text-truncate" style="max-width: 350px">The Purpose Is To Bring Learning To Students</h1>
+          <span class="square"></span>
+          <p class="text-left .text-truncate" style="max-width: 350px">To Build A Community Where Students Can Explore Their Passion, Learn Latest Technologies, Work On Real World Problems,
+          and Help Each Other To Learn More. Do More.</p>
 
-			</div>
-		</div>
-	</section>
+          <a href="#"><button class="header-btn"><img src="images/play_btn.png" style="width:50px;" class="play-btn"> Watch Tutorials</button></a>  
+          <div class="line">
+            <span class="line-1"></span><br>
+            <span class="line-2"></span><br>
+            <span class="line-3"></span>
+          </div>  
+      </div>
+  </div>
+</div>
 
-	<!-- story -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
 
-	<section id="story">	
-		<div class="container-fluid">
-		  <div class="row">
-		       <div class="card-overlay">
-		       	<div class="container story-row">
-		       		<div class="col-md-6">
-						<h1>Read Our<br>Stories </h1>
+<!-- social-icons -->
 
-					</div>
-					<div class="col-md-6">
-						<div class="content">
-						<p id="story_p">Start Reading our blogs and articles on various technology trends and technical writups.</p>
-						<button class="common-btn">Start Reading Now!</button><br>
-						<div class="line" style="text-align: right;display: inline-block;margin-left: 120px;">
-							<span style="background: #d2663b !important;" class="line-1"></span><br>
-							<span style="background: #d2663b;" class="line-2"></span><br>
-							<span style="background: #d2663b;" class="line-3"></span>
-						</div>	
-						</div>
-					</div>
-				</div>
-		       </div>
-		  </div>  
-		</div>
-	</section>
+  <div class="social-icons">
+    <img src="images/instagram.png" class="img-fluid" alt="instagram">
+    <img src="images/telegram.png" class="img-fluid" alt="telegram">
+    <img src="images/youtube.png" class="img-fluid" alt="youtube">
+    <img src="images/facebook.png" class="img-fluid" alt="facebook">
+    <img src="images/whatsapp.png" class="img-fluid" alt="whatsapp">
+  </div>
 
-	<!-- contact -->
-	<section id="contact">
-		<div class="container contact-row">
-			<div class="contact-left-col">
-				<h1>Sign Up to Join Our<br>Community </h1>
-				<form>
-					<input type="text" name="" placeholder="Enter First Name">
-					<input type="text" name="" placeholder="Enter Last Name">
-					<input type="email" name="" placeholder="Enter Email">
-					<div class="btn-box">
-						<button class="common-btn">Subscribe</button>
-						<button class="common-btn">Start Learning Now!</button>
-					</div>
-				</form>
-				<div class="line">
-					<span class="line-1"></span><br>
-					<span class="line-2"></span><br>
-					<span class="line-3"></span>
-				</div>	
-			</div>
-			<div class="contact-right-col">
-				<img src="images/contact.png">
-			</div>
-		</div>
-	</section>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("menuBtn").style.marginLeft = "0px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
 
-	<!-- footer -->
-	<section id="footer">
-		<div class="container">
-			<hr>
-		</div>
-	</section>
-
-	<!-- social-icons -->
-
-	<div class="social-icons">
-		
-		<img src="images/instagram.png" alt="instagram">
-		<img src="images/telegram.png" alt="telegram">
-		<img src="images/youtube.png" alt="youtube">
-		<img src="images/facebook.png" alt="facebook">
-		<img src="images/whatsapp.png" alt="whatsapp">
-	</div>
-
-	<script>
-		var menuBtn = document.getElementById('menuBtn');
-		var sideNav = document.getElementById('sideNav');
-
-		sideNav.style.right = "-250px";
-		menuBtn.onclick = function(){
-			if(sideNav.style.right == '-250px'){
-				sideNav.style.right = '0';
-			}
-			else{
-				sideNav.style.right = "-250px";
-			}
-		}
-
-	</script>
-
-<!-- blinking -->
-	<script>
-
-		var underline = document.querySelector('.underline');
-		var _container = document.querySelector('.underline-container');
-
-		// _container.style.width = '75px';
-		underline.style.width = '21px';
-		/*underline.style.left =  '0px';*/
-
-		underline.style.left = '0px';
-
-	</script>
-
-
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("menuBtn").style.marginLeft= "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+   
 </body>
-</html>
+</html> 
