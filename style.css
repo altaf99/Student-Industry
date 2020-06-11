@@ -4,21 +4,21 @@
 	font-family: sans-serif;
 }
 
-/**{
+*{
     
  outline: 1px solid red !important; 
  margin-right: 0;
-} */
+} 
 
-body{
+/*body{
 	overflow-x: hidden !important;
-}
+}*/
 html {
   scroll-behavior: smooth;
 }
 
 #header{
-	height: 100vh;
+	/*height: 100vh;*/
 	background-image: url(images/background.png);
 	background-position: center;
 	background-size: cover;
@@ -26,7 +26,6 @@ html {
 
 .header-text{
 	max-width: 350px;
-	margin-top: 12px;
 }
 
 #header .play-btn{
@@ -40,23 +39,22 @@ html {
 	padding: 20px 15px !important;
 }
 
-.mycontainer{
+/*.mycontainer{
 	margin-right: 100px;
 	margin-left: 100px;
-}
+}*/
 
-.slogun{
+#slogun1{
 	margin-top: 28px;
 	width:300px;
 	height: 95px;
 }
 
-.slogun2{
+#slogun2{
 	margin-top: 7px;
 	width:350px;
 	height: 125px;
 }
-
 
 h1{
 	font-size: 32px;
@@ -229,6 +227,7 @@ nav ul li a{
 	width: 100vw;
 	background-image: url(images/space.jpg);
 	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: hidden;
 }
@@ -441,6 +440,7 @@ hr{
 	width: 100vw;
 	background-image: url(images/space2.jpg);
 	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: hidden;
 }
@@ -509,11 +509,19 @@ hr{
 
 @media only screen and  (max-width: 770px){
 	#header{
-		background-image: none;
-		height: 75vh;
+		/*background-image: none;*/
+		/*height: 75vh;*/
 	}
 
-	.mycontainer{
+	#header .container{
+		padding-right: 20px;padding-left: 50px;padding-top: 30px;
+	}
+
+	#header #student{
+		padding-right: 30px;padding-top: 10px;
+	}
+
+	/*.mycontainer{
 	margin-right: 50px;
 	margin-left: 50px;
 	}
@@ -564,7 +572,7 @@ hr{
 	width: 40px;
 	right: 50px;
 	
-	}
+	}*/
 	#about{
 		padding: 8px 0;
 	}
