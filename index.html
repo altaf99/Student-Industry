@@ -12,7 +12,15 @@
 body {
   font-family: sans-serif;
   transition: background-color .5s;
+  /*overflow-x: hidden;*/
 }
+
+/**{
+    
+ outline: 1px solid red !important; 
+ margin-right: 0;
+} 
+*/
 
 .sidenav {
   height: 100%;
@@ -155,6 +163,124 @@ body {
 	color: #797979;
 }
 
+/*features*/
+.features img{
+	width: 180px;
+}
+
+.features h4{
+	margin-bottom: 15px;
+	font-size: 20px;
+	font-weight: 400px;
+}
+
+.feature-btn-group{
+	margin: 40px auto 0;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;     
+	margin-bottom: 10px;      
+}
+
+.feature-btn-group .line{
+	text-align: right;
+	display: inline-block;
+	margin-right: 25px;
+}
+
+.feature-btn{
+  padding: 18px 40px;
+  background: transparent;
+  outline: none;
+  border: 2px solid #8c6bc1;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
+
+/*services*/
+.services img{
+	width: 200px;
+}
+
+.services h4{
+	padding: 5px;
+	margin-top: 25px;
+	text-transform: uppercase;
+
+}
+
+.title::before{
+	content:'';
+	background: #8c6bc1;
+	height: 5px;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	transform: translateY(63px);
+
+}
+
+.title::after{
+	content:'';
+	background: #8c6bc1;
+	height: 10px;
+	width: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	display: block;
+	transform: translateY(8px);
+
+}
+
+/*courses*/
+#courses{;
+	height: 60vh;
+	background-image: url(images/space.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.card-overlay {
+	margin-top:0 !important;
+	height: 60vh;
+  	background: rgba(0, 0, 0, 0.5);
+}
+
+#courses h1{
+	background: rgb(117,0,195);
+	background: linear-gradient(90deg, rgba(117,0,195,1) 0%, rgba(133,59,200,1) 2%, rgba(29,253,222,1) 50%, rgba(255,208,141,1) 100%);
+}
+
+#courses p{
+	color: #00dee8;
+}
+
+#courses .course-btn{
+  padding: 18px 40px;
+  background: transparent;
+  outline: none;
+  border: 2px solid #8c6bc1;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#courses .course-bt{
+	margin: 95px 0;
+	border-color: #00dee8 !important;
+	color: #e49716;
+	padding: 15px 25px !important; 
+}
+
+#courses .course-btn:hover {
+  background-color: yellow;
+  color: black;
+}
+
+
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -183,6 +309,7 @@ body {
   .about{
   	margin-top: 22%;
   	padding-left: 0px !important;
+  	padding-right: 8px !important;
   }
 
   .about-text .square{
@@ -192,6 +319,29 @@ body {
   .about-text h2 {
     margin: 25px 0 10px;
    }
+
+   .about-right{
+   		padding-right: 3px !important;
+  }
+
+  .row{
+  	margin-right: 0px;
+    /*margin-left: -10px !important;*/
+  }
+
+  .feature-btn-group{
+	margin: 20px auto 0;
+
+	}
+
+  .feature-btn-group .line{
+  	display: none;
+  }
+
+  .courses-row{
+  	    padding-left: 35px;
+  }
+ 
 
 }
 </style>
@@ -289,7 +439,7 @@ body {
 		<div class="col-sm-6">
 			<img src="images/about.png" class="img-fluid">
 		</div>
-		<div class="col-sm-6">
+		<div class="col-sm-6 about-right">
 			<div class="about-text mx-4" style="text-align: right;">
 				<h1>About</h1>
 				<span class="square"></span>
@@ -306,6 +456,108 @@ body {
 		
 	</div>  	
   </div>
+
+  <!-- features -->
+		<div class="container features">
+			<div class="text-center">
+				<h1 class="title">Our Features</h1>
+			</div>
+			<div class="row">
+				<div class="col-sm-4 text-center">
+					<img src="images/pic-1.png" class="img-fluid">
+					<h4>Learn Anywhere</h4>
+					<p>Switch between your computer, tablet or mobile device</p>
+				</div>
+				<div class="col-sm-4 text-center">
+					<img src="images/pic-2.png" class="img-fluid">
+					<h4>Expert Teachers</h4>
+					<p>Learn from industry experts and from your peers who are passionate about teaching.</p>
+				</div>
+				<div class="col-sm-4 text-center">
+					<img src="images/pic-3.png" class="img-fluid">
+					<h4>Unlimited Access</h4>
+					<p>choose what you'd like to learn from our extensive free tutorials and courses.</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-4 text-center my-4">
+					<img src="images/teamwork.jpg" class="img-fluid">
+					<h4>Peer Learning</h4>
+					<p>Empowering Peer to Peer learning among students.</p>
+				</div>
+				<div class="col-sm-4 text-center">
+					<img src="images/community.jpg" class="img-fluid">
+					<h4>Community</h4>
+					<p>We have Huge community of Developers, Non-technical and Cyber Security Professionals.</p>
+				</div>
+				<div class="col-sm-4 text-center my-4">
+					<img src="images/industry.jpg" class="img-fluid">
+					<h4>Student Industry</h4>
+					<p>We have our own IT Infrastructure to let students to build real things.</p>
+				</div>
+			</div>
+
+				<div class="col-sm feature-btn-group">
+					<div class="line">
+						<span class="line-1"></span><br>
+						<span class="line-2"></span><br>
+						<span class="line-3"></span>
+					</div>	
+					<button class="feature-btn">Start Learning Now!</button>
+				</div>
+		</div>
+	
+<!-- services -->
+	<div class="container text-center services my-4">
+		<h1 class="title">WHAT WE DO?</h1>
+		<div class="row text-center">
+			<div class="col-md-4 services">
+				<img src="images/workshop.jpg" class="service-img img-fluid my-n3">
+				<h4>Workshops</h4>
+				<p>We conduct workshops on emerging technologies and provides hands-on experience on what being taught!</p>
+			</div>
+			<div class="col-md-4 services">
+				<img src="images/internship.png" class="service-img2 img-fluid">
+				<h4>Provides Interships</h4>
+				<p>We provides intership opportunities to students.</p>
+			</div>
+			<div class="col-md-4 services">
+				<img src="images/video_tutorial.jpg" class="service-img3 my-n1 img-fluid">
+				<h4>Video Tutorials</h4>
+				<p>We have Video tutorials so that students can learn on thier own pace and have better understanding on concepts.</p>
+			</div>
+		</div>
+		<div class="row text-center">
+			<div class="col-md-6 services my-3">
+				<img src="images/blog_tutorial.jpg" style="width: 240px;" class="service-img4 img-fluid">
+				<h4>Blog Tutorials</h4>
+				<p>we let students to share what they have learned in the form of Technical Blog.</p>
+			</div>
+			<div class="col-md-6 services">
+				<img src="images/security.jpg" class="service-img img-fluid">
+				<h4>Cyber Security</h4>
+				<p>With development we also teach students how to write secure code and give them education on Cyber Security and threats.</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- courses -->
+	<section id="courses">	
+	      <div class="card-overlay">
+	      	<div class="container" style="max-width: 100%;">
+		      	<div class="row justify-content-sm-center col-md-6 offset-md-3 courses-row">
+		      		<div class="text-center my-4">
+		      			<h1 class="underline-container">Our Courses <span class="underline"></span></h1>
+			      		<p class="mt-5">To Build A Community Where Students Can Explore Their Passion, Learn Latest Technologies, Work On Real World Problems,
+						and Help Each Other To Learn More. Do More.</p>
+						<a href="#"><button class="course-btn mt-5">Browse Courses</button></a>	
+		      		</div>
+		      	</div>
+			</div>
+		</div>
+	</section>
+
 
 <script>
 function openNav() {
