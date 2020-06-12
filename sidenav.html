@@ -2,12 +2,14 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
 body {
   font-family: sans-serif;
@@ -134,25 +136,8 @@ body {
   cursor: pointer;
 }
 
-/*about*/
-.about{
-  	margin-top: 2%;
-  	padding-left: 0px !important;
-}
-.about-text{
-	display: inline-block;
-}
-
-.about-text h2{
-	margin: 50px 0 10px;
-	font-size: 28px;
-	font-style: italic;
-}
-
-.about-text h3{
-	font-size: 20px;
-	font-style: italic;
-	color: #797979;
+.social-icons .fb{
+  width: 25px;
 }
 
 
@@ -165,6 +150,7 @@ body {
 @media only screen and  (max-width: 770px){
   .header-image{
     background-image: none;
+    /*height: 75vh;*/
   }
 }
 
@@ -175,29 +161,11 @@ body {
   .social-icons {
     width: 28px;
   }
-
-  .social-icons .fb{
-  	width: 22px;
-  }
-
-  .about{
-  	margin-top: 22%;
-  	padding-left: 0px !important;
-  }
-
-  .about-text .square{
-  	 margin: 0px 0;
-  }
-
-  .about-text h2 {
-    margin: 25px 0 10px;
-   }
-
 }
 </style>
 </head>
 <body>
-
+<!-- navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -234,20 +202,20 @@ body {
   </div>
 </nav>
 
+<!-- sidenav -->
 <img src="images/menu.png" id="menuBtn" class="img-fluid" onclick="openNav()">
 
 
-<div class="header-image" style="margin-bottom: 5%;">
+<!-- header -->
+<div class="header-image">
   <div class="container">
-
     <div class="row">
         <img src="images/student.png"  class="img-responsive col-sm-4">
-      </div>
-
-      <div class="row" style="margin-top: 0">
-        <img src="images/industry.png" class="img-responsive col-sm-4">
     </div>
 
+    <div class="row" style="margin-top: 0">
+        <img src="images/industry.png" class="img-responsive col-sm-4">
+    </div>
     <div class="header-text">
       <h1 class="text-left .text-truncate" style="max-width: 350px">The Purpose Is To Bring Learning To Students</h1>
           <span class="square"></span>
@@ -280,31 +248,6 @@ body {
     <img src="images/youtube.png" class="img-fluid" alt="youtube">
     <img src="images/facebook.png" class="img-fluid fb" alt="facebook">
     <img src="images/whatsapp.png" class="img-fluid" alt="whatsapp">
-  </div>
-
-  <!-- about -->
-  <div class="container about" style="max-width: 100%;">
-	<div class="row">
-
-		<div class="col-sm-6">
-			<img src="images/about.png" class="img-fluid">
-		</div>
-		<div class="col-sm-6">
-			<div class="about-text mx-4" style="text-align: right;">
-				<h1>About</h1>
-				<span class="square"></span>
-				<p class="text-right .text-truncate">We Are Non-Profit Organization and Our AIM Is To Bring Disruption In Technical Education And To Make Student Skilled, To Bridge The Skill GAP Between Industries and Students</p>
-				<div class="line">
-					<span class="line-1"></span><br>
-					<span class="line-2"></span><br>
-					<span class="line-3"></span>
-				</div>	
-				<h2 class="text-right .text-truncate">"Learning is not attained by chance, it must be sought for with ardor and attended to width diligence"</h2>
-				<h3 class="text-right">----Abigail Adams</h3>
-			</div>
-		</div>
-		
-	</div>  	
   </div>
 
 <script>
