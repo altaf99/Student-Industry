@@ -9,6 +9,7 @@
 
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+
 body {
   font-family: sans-serif;
   transition: background-color .5s;
@@ -21,7 +22,9 @@ body {
  margin-right: 0;
 } 
 */
-
+html {
+  scroll-behavior: smooth;
+}
 .sidenav {
   height: 100%;
   width: 0;
@@ -347,7 +350,26 @@ body {
   cursor: pointer;
   margin-bottom: 12px;
 }
+/*blinkking*/
 
+.underline {
+  position: relative;
+  display: inline-block;
+  height: 2px;
+  background-color: green;
+  animation: blinking .2s infinite;
+  -webkit-animation: blinking 0.3s infinite backwards alternate;
+}
+
+@-webkit-keyframes blinking {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes blinking {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
+}
 @media only screen and  (max-width: 1130px){
 
   #story{
@@ -522,9 +544,11 @@ body {
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
+  <a href="#header-image">Home</a>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#courses">Courses</a>
+  <a href="#story">Story</a>
   <a href="#">Contact</a>
 </div>
 
@@ -654,7 +678,7 @@ body {
 	      	<div class="container" style="max-width: 100%;">
 		      	<div class="row justify-content-sm-center col-md-6 offset-md-3 courses-row">
 		      		<div class="text-center my-4">
-		      			<h1 class="underline-container">Our Courses <span class="underline"></span></h1>
+		      			<h1 class="underline-container">Our Courses<span class="underline"></span></h1>
 			      		<p class="mt-5">To Build A Community Where Students Can Explore Their Passion, Learn Latest Technologies, Work On Real World Problems,
 						and Help Each Other To Learn More. Do More.</p>
 						<a href="#"><button class="course-btn mt-3">Browse Courses</button></a>	
@@ -721,7 +745,7 @@ body {
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("menuBtn").style.marginLeft = "0px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 
 function closeNav() {
@@ -730,6 +754,20 @@ function closeNav() {
   document.body.style.backgroundColor = "white";
 }
 </script>
+
+<!-- blinking -->
+	<script>
+
+		var underline = document.querySelector('.underline');
+		var _container = document.querySelector('.underline-container');
+
+		// _container.style.width = '75px';
+		underline.style.width = '21px';
+		/*underline.style.left =  '0px';*/
+
+		underline.style.left = '0px';
+
+	</script>
    
 </body>
 </html> 
