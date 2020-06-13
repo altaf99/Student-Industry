@@ -144,7 +144,6 @@ body {
 
 /*about*/
 .about, .offer{
-  	margin-top: 2%;
   	padding-left: 0px !important;
 }
 .about-text{
@@ -300,16 +299,94 @@ body {
   margin-bottom: 12px;
 }
 
+/*story*/
+#story{;
+	height: 60vh;
+	/*width: 100vw;*/
+	background-image: url(images/space2.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*overflow: hidden;*/
+}
+
+#story h1{
+	background: rgb(255,174,0);
+	background: linear-gradient(90deg, rgba(255,174,0,1) 0%, rgba(85,236,231,1) 51%, rgba(217,0,170,1) 100%);
+	/*margin-right: 0%;
+	margin-left: 20%;*/
+	/*margin-top: 0%;*/
+	padding: 10px 20px !important; 	
+	border-left: 10px solid #fff;
+	border-top: 2px solid rgba(255,174,0,1);
+	border-right: 2px solid rgba(255,174,0,1);
+	border-bottom: 2px solid rgba(255,174,0,1);
+
+	-webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+#story p{
+	color:  #00dee8;
+	font-size: 28px;
+}
+
+#story .story-btn{
+	border-color: #ffb8b4 !important;
+	color: #fff !important;
+	padding: 15px 25px !important; 
+	/*margin-bottom: 10px !important;*/
+}
+
+.story-btn{
+  padding: 18px 40px;
+  background: transparent;
+  outline: none;
+  border: 2px solid #8c6bc1;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+@media only screen and  (max-width: 1130px){
+
+  #story{
+  	margin-top: 3%;
+  }
+
+}
+
+
+@media only screen and  (max-width: 990px){
+
+  #story{
+  	margin-top: 5%;
+  }
+
+}
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+
+  .about{
+  	margin-top: 20% !important;
+  }
 }
 
 
 @media only screen and  (max-width: 770px){
   .header-image{
     background-image: none;
+  }
+
+  .about{
+  	margin-top: 20% !important;
+  }
+
+  #story{
+  	height: 90vh;
+  	margin-top: 5%;
   }
 }
 
@@ -325,8 +402,8 @@ body {
   	width: 22px;
   }
 
-  .about,{
-  	margin-top: 30%;
+  .about{
+  	margin-top: 20% !important;
   	padding-left: 0px !important;
   	padding-right: 8px !important;
   }
@@ -361,13 +438,15 @@ body {
   	    padding-left: 35px;
   }
 
-  .offer{
-
+  #story{
+  	height: 90vh;
+  	margin-top: 5%;
   }
 
-  .offer-right{
-  	/*padding-right: */
+  #story p{
+  	font-size: 24px;
   }
+
  
 
 }
@@ -609,6 +688,33 @@ body {
 		
 	</div>  	
   </div>
+
+	<!-- story -->
+	<section id="story">	
+	      <div class="card-overlay">
+	      	<div class="container" style="max-width: 100%;">
+		      	<div class="row">
+		      			<div class="col-sm-6">
+		      				<h1 class="mt-5 ml-5 mr-5">Our Stories</h1>
+		      			</div>
+		      			<div class="col-sm-6">
+		      				<p class="mt-5 text-center">Start Reading our blogs and articles on various technology trends and technical writups.</p>
+		      				<div class="story-right mr-5" style="text-align: right;">
+
+		      					<a href="#"><button class="story-btn mt-3">Start Reading Now!</button></a><br>
+								<div class="line mt-3">
+									<span style="background: #d2663b;" class="line-1"></span><br>
+									<span style="background: #d2663b;" class="line-2"></span><br>
+									<span style="background: #d2663b;" class="line-3"></span>
+								</div>	
+		      					
+		      				</div>
+							
+		      			</div>
+		      	</div>
+			</div>
+		</div>
+	</section>
 
 
 <script>
