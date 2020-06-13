@@ -239,11 +239,17 @@ html {
 
 /*courses*/
 #courses{;
-	height: 60vh;
+	height: 65vh;
 	background-image: url(images/space.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+#courses .card-overlay {
+	margin-top:0 !important;
+	height: 65vh;
+  	background: rgba(0, 0, 0, 0.5);
 }
 
 .card-overlay {
@@ -425,6 +431,7 @@ form input{
   }
 
 
+
 }
 
 @media screen and (max-height: 450px) {
@@ -462,6 +469,20 @@ form input{
   	height: 90vh;
   	margin-top: 5%;
   }
+
+    #courses{
+  	height: 90vh;
+  	margin-top: 5%;
+  }
+
+  .card-overlay{
+  	height: 90vh;
+  }
+
+    #courses .card-overlay{
+  	height: 90vh;
+  }
+
 
    .contact-left {
     padding: 1rem!important;	
@@ -527,8 +548,25 @@ form input{
   	margin-top: 5%;
   }
 
+  #courses{
+  	height: 90vh;
+  	margin-top: 5%;
+  }
+
   #story p{
   	font-size: 24px;
+  }
+
+  #courses p{
+  	font-size: 24px;
+  }
+
+  #courses .card-overlay{
+  	height: 90vh;
+  }
+
+  .card-overlay{
+  	height: 90vh;
   }
 
   .contact-left {
