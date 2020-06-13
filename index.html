@@ -143,7 +143,7 @@ body {
 }
 
 /*about*/
-.about{
+.about, .offer{
   	margin-top: 2%;
   	padding-left: 0px !important;
 }
@@ -151,7 +151,7 @@ body {
 	display: inline-block;
 }
 
-.about-text h2{
+.about-text h2, .offer-text h2{
 	margin: 50px 0 10px;
 	font-size: 28px;
 	font-style: italic;
@@ -280,6 +280,25 @@ body {
   color: black;
 }
 
+/*offer*/
+
+.offer{
+	margin-top: 3% !important;
+}
+
+.offer button{
+	margin: 30px 0;
+}
+
+.offer-btn{
+  padding: 18px 40px;
+  background: transparent;
+  outline: none;
+  border: 2px solid #8c6bc1;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
 
 
 @media screen and (max-height: 450px) {
@@ -306,13 +325,13 @@ body {
   	width: 22px;
   }
 
-  .about{
-  	margin-top: 22%;
+  .about,{
+  	margin-top: 30%;
   	padding-left: 0px !important;
   	padding-right: 8px !important;
   }
 
-  .about-text .square{
+  .about-text .square, .offer-text .square{
   	 margin: 0px 0;
   }
 
@@ -340,6 +359,14 @@ body {
 
   .courses-row{
   	    padding-left: 35px;
+  }
+
+  .offer{
+
+  }
+
+  .offer-right{
+  	/*padding-right: */
   }
  
 
@@ -551,12 +578,37 @@ body {
 		      			<h1 class="underline-container">Our Courses <span class="underline"></span></h1>
 			      		<p class="mt-5">To Build A Community Where Students Can Explore Their Passion, Learn Latest Technologies, Work On Real World Problems,
 						and Help Each Other To Learn More. Do More.</p>
-						<a href="#"><button class="course-btn mt-5">Browse Courses</button></a>	
+						<a href="#"><button class="course-btn mt-3">Browse Courses</button></a>	
 		      		</div>
 		      	</div>
 			</div>
 		</div>
 	</section>
+
+<!-- offer -->
+
+  <div class="container offer" style="max-width: 100%;">
+	<div class="row">
+
+		<div class="col-sm-6">
+			<img src="images/offer.png" class="img-fluid">
+		</div>
+		<div class="col-sm-6 offer-right mt-5">
+			<div class="offer-text" style="text-align: right;">
+				<h1 class=".text-truncate">Limitless Learning,<br> Limitless Possibilities</h1>
+				<span class="square"></span>
+				<p class="text-right .text-truncate mt-2">Browser our free courses, video tutorials, blogs and start shaping your career</p>
+				<button class="offer-btn mt-5">Start Learning Now!</button>
+				<div class="line">
+					<span class="line-1"></span><br>
+					<span class="line-2"></span><br>
+					<span class="line-3"></span>
+				</div>	
+			</div>
+		</div>
+		
+	</div>  	
+  </div>
 
 
 <script>
