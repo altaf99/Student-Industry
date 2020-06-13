@@ -350,6 +350,45 @@ html {
   cursor: pointer;
   margin-bottom: 12px;
 }
+
+/*contact*/
+
+.contact-btn{
+  padding: 18px 40px;
+  background: transparent;
+  outline: none;
+  border: 2px solid #8c6bc1;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+form{
+	max-width: 350px;
+	margin: 30px 0;
+}
+
+form input{
+	width: 100%;
+	padding: 12px 10px;
+	margin-bottom: 5px;
+	outline: none;
+	box-shadow: none;
+	box-sizing: border-box;
+	border: 2px solid #8c6bc1;
+}
+
+.btn-box{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn-box button{
+	flex-basis: 48%;
+	padding: 18px 0;
+}
+
 /*blinkking*/
 
 .underline {
@@ -385,6 +424,7 @@ html {
   	margin-top: 5%;
   }
 
+
 }
 
 @media screen and (max-height: 450px) {
@@ -394,6 +434,18 @@ html {
   .about{
   	margin-top: 20% !important;
   }
+
+    .contact-left {
+    padding: .5rem!important;	
+  }
+
+  .contact-right {
+    padding: .5rem!important;	
+  }
+
+
+ 
+ 
 }
 
 
@@ -410,6 +462,16 @@ html {
   	height: 90vh;
   	margin-top: 5%;
   }
+
+   .contact-left {
+    padding: 1rem!important;	
+  }
+
+  .contact-right {
+    padding: 1rem!important;	
+  }
+
+ 
 }
 
 @media only screen and  (max-width: 650px){
@@ -467,6 +529,14 @@ html {
 
   #story p{
   	font-size: 24px;
+  }
+
+  .contact-left {
+    padding: .5rem!important;	
+  }
+
+  .contact-right {
+    padding: .5rem!important;	
   }
 
  
@@ -718,27 +788,51 @@ html {
 	      <div class="card-overlay">
 	      	<div class="container" style="max-width: 100%;">
 		      	<div class="row">
-		      			<div class="col-sm-6">
-		      				<h1 class="mt-5 ml-5 mr-5">Our Stories</h1>
-		      			</div>
-		      			<div class="col-sm-6">
-		      				<p class="mt-5 text-center">Start Reading our blogs and articles on various technology trends and technical writups.</p>
-		      				<div class="story-right mr-5" style="text-align: right;">
+	      			<div class="col-sm-6">
+	      				<h1 class="mt-5 ml-5 mr-5">Our Stories</h1>
+	      			</div>
+	      			<div class="col-sm-6">
+	      				<p class="mt-5 text-center">Start Reading our blogs and articles on various technology trends and technical writups.</p>
+	      				<div class="story-right mr-5" style="text-align: right;">
 
-		      					<a href="#"><button class="story-btn mt-3">Start Reading Now!</button></a><br>
-								<div class="line mt-3">
-									<span style="background: #d2663b;" class="line-1"></span><br>
-									<span style="background: #d2663b;" class="line-2"></span><br>
-									<span style="background: #d2663b;" class="line-3"></span>
-								</div>	
-		      					
-		      				</div>
-							
-		      			</div>
+	      					<a href="#"><button class="story-btn mt-3">Start Reading Now!</button></a><br>
+							<div class="line mt-3">
+								<span style="background: #d2663b;" class="line-1"></span><br>
+								<span style="background: #d2663b;" class="line-2"></span><br>
+								<span style="background: #d2663b;" class="line-3"></span>
+							</div>	
+	      				</div>
+	      			</div>
 		      	</div>
 			</div>
 		</div>
 	</section>
+
+<!-- contact -->
+
+  <div class="container contact" style="max-width: 100%;">
+	<div class="row">
+		<div class="col-sm-6 p-5 contact-left">
+			<div class="">
+				<h1>Sign Up to Join Our<br>Community </h1>
+				<form> 
+					<input type="text" name="" placeholder="Enter First Name">
+					<input type="text" name="" placeholder="Enter Last Name">
+					<input type="email" name="" placeholder="Enter Email">
+					<div class="btn-box">
+						<button class="contact-btn">Subscribe</button>
+						<button class="contact-btn">Start Learning Now!</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		<div class="col-sm-6 p-5 contact-right">
+			<img src="images/contact.png" class="img-fluid">
+		</div>
+		
+	</div>  	
+  </div>
 
 
 <script>
