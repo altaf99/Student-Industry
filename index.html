@@ -72,7 +72,7 @@ html {
 
 .header-image {
   background-image: url("images/background.png");
-  height: 92vh;
+  height: 90vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -438,10 +438,6 @@ form input{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 
-  .about{
-  	margin-top: 20% !important;
-  }
-
     .contact-left {
     padding: .5rem!important;	
   }
@@ -449,13 +445,19 @@ form input{
   .contact-right {
     padding: .5rem!important;	
   }
+
 }
 
-@media only screen and  (max-width: 300px){
+@media only screen and  (max-width: 330px){
  .about{
   	padding-top: 70% !important;
   	padding-left: 0px !important;
   	padding-right: 2px !important;
+  }
+
+  .header-image{
+    background-image: none;
+    height: 90vh;
   }
 }
 
@@ -463,11 +465,12 @@ form input{
 @media only screen and  (max-width: 770px){
   .header-image{
     background-image: none;
+    /*height: 70vh;*/
   }
 
-  .about{
+/*  .about{
   	margin-top: 20% !important;
-  }
+  }*/
 
   #story{
   	height: 90vh;
