@@ -72,7 +72,7 @@ html {
 
 .header-image {
   background-image: url("images/background.png");
-  height: 90vh;
+  /*height: 90vh;*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -450,14 +450,14 @@ form input{
 
 @media only screen and  (max-width: 330px){
  .about{
-  	padding-top: 70% !important;
+  	/*padding-top: 70% !important;*/
   	padding-left: 0px !important;
   	padding-right: 2px !important;
   }
 
   .header-image{
     background-image: none;
-    height: 90vh;
+    /*height: 90vh;*/
   }
 }
 
@@ -515,7 +515,7 @@ form input{
   }
 
   .about{
-  	margin-top: 20% !important;
+  	/*margin-top: 20% !important;*/
   	padding-left: 0px !important;
   	padding-right: 8px !important;
   }
@@ -584,8 +584,6 @@ form input{
     padding: .5rem!important;	
   }
 
- 
-
 }
 </style>
 </head>
@@ -629,8 +627,8 @@ form input{
 
 <img src="images/menu.png" id="menuBtn" class="img-fluid" onclick="openNav()">
 
-
-<div class="header-image" style="margin-bottom: 5%;">
+<div class="container" style="max-width: 100%;">
+<div class="header-image">
   <div class="container">
 
     <div class="row">
@@ -655,6 +653,7 @@ form input{
           </div>  
       </div>
   </div>
+</div>
 </div>
 
 <div id="mySidenav" class="sidenav">
