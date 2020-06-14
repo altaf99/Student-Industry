@@ -86,6 +86,11 @@ html {
   margin-bottom: 12px;
 }
 
+.header-btn:hover {
+  background-color: yellow;
+  color: black;
+}
+
 .square{
   height: 14px;
   width: 14px;
@@ -188,6 +193,11 @@ html {
   
 }
 
+.feature-btn:hover {
+  background-color: yellow;
+  color: black;
+}
+
 /*services*/
 .services img{
 	width: 200px;
@@ -264,8 +274,8 @@ html {
   cursor: pointer;
 }
 
-#courses .course-bt{
-	margin: 95px 0;
+#courses .course-btn{
+	/*margin: 95px 0;*/
 	border-color: #00dee8 !important;
 	color: #e49716;
 	padding: 15px 25px !important; 
@@ -294,6 +304,11 @@ html {
   font-weight: bold;
   cursor: pointer;
   margin-bottom: 12px;
+}
+
+.offer-btn:hover {
+  background-color: yellow;
+  color: black;
 }
 
 /*story*/
@@ -330,7 +345,7 @@ html {
 
 #story .story-btn{
 	border-color: #ffb8b4 !important;
-	color: #fff !important;
+	color: #fff;
 	padding: 15px 25px !important; 
 	/*margin-bottom: 10px !important;*/
 }
@@ -345,6 +360,11 @@ html {
   margin-bottom: 12px;
 }
 
+.story-btn:hover {
+  background-color: yellow;
+  color: black !important;
+}
+
 /*contact*/
 
 .contact-btn{
@@ -355,6 +375,11 @@ html {
   font-weight: bold;
   cursor: pointer;
   margin-bottom: 12px;
+}
+
+.contact-btn:hover {
+  background-color: yellow;
+  color: black;
 }
 
 form{
