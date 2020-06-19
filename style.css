@@ -10,6 +10,13 @@ body {
  margin-right: 0;
 } 
 */
+
+.navbar-dark {
+     background-color: #3a68bb;
+     color: white;
+}
+
+
 html {
   scroll-behavior: smooth;
 }
@@ -442,8 +449,6 @@ form input{
   #story{
   	margin-top: 5%;
   }
-
-
 
 }
 

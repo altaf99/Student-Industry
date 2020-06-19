@@ -5,3 +5,6 @@ tutorial nav => e89393,#9cf7f3
 pink => #f67c92
 
 hover => #85d8ff , #a09fea
+
+
+#6f43d6
